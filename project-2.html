@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-</head>
-<body>
-      
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 2</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="form-other-cities">
+        <div class="buttons">
+          <form id="city-to-search">
+            <input
+              type="text"
+              id="city-name-input"
+              placeholder="Enter your city"
+            />
+            <input type="submit" id="search-button" value="Search" />
+          </form>
+          <button id="current-location">Current</button>
+        </div>
+        <h1></h1>
+        <h3 id="date"></h3>
+        <h4 class="weather-type"></h4>
+
+        <span class="other-cities">
+          <button class="city-button">Lisbon</button>
+          <button class="city-button">Paris</button>
+          <button class="city-button">Sydney</button>
+          <button class="city-button">San Fransisco</button>
+        </span>
+      </div>
+      <div class="chosen-city-info">
+        <div class="weather">
+          <span class="weather-emoji"> ☀️ </span>
+          <span class="degrees"></span>
+          <span class="links">
+            <a href="#" class="link-temp" id="celsius">°C</a> |
+            <a href="#" class="link-temp" id="fahrenheit">°F</a>
+          </span>
+          <div class="humidity-wind">
+            <p class="humidity"></p>
+            <p class="wind"></p>
+          </div>
+        </div>
+
+        <table class="days-of-week">
+          <thead>
+            <tr>
+              <th scope="col" class="data">
+                <span>🌧️</span> <br />
+                Wed
+              </th>
+              <th scope="col" class="data">
+                <span>🌩️</span> <br />
+                Thu
+              </th>
+              <th scope="col" class="data">
+                <span>☁️</span> <br />
+                Fri
+              </th>
+              <th scope="col" class="data">
+                <span>☀️</span> <br />
+                Sat
+              </th>
+              <th scope="col" class="data">
+                <span>🌥️</span> <br />
+                Sun
+              </th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider">
+            <tr>
+              <th scope="row" class="data">32°</th>
+              <th scope="row" class="data">28°</th>
+              <th scope="row" class="data">30°</th>
+              <th scope="row" class="data">31°</th>
+              <th scope="row" class="data">32°</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
 </html>
