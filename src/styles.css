@@ -1,0 +1,142 @@
+body {
+  background: linear-gradient(
+    106.8deg,
+    rgb(117, 255, 220) 6%,
+    rgb(163, 216, 255) 47.6%,
+    rgb(248, 215, 251) 87.8%
+  );
+}
+.main-content {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  margin: 0 auto;
+  padding: 30px;
+  margin-top: 20px;
+  border: 4px solid #0d6efd;
+  border-radius: 2px;
+  color: #006ec5;
+}
+.chosen-city-info {
+  margin-left: 50px;
+}
+.table {
+  margin-left: 50px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+#city-name-input {
+  font-size: 30px;
+  padding: 10px;
+  border: 1px solid #0d6efd;
+  border-radius: 4px;
+  color: #006ec5;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(117, 255, 220) 6%,
+    rgb(163, 216, 255) 47.6%
+  );
+}
+#search-button {
+  margin-left: 15px;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+  background-color: #006ec5;
+  border: 1px solid #0d6efd;
+  border-radius: 4px;
+  transition: all 200ms ease;
+  box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
+}
+#search-button:hover {
+  background-color: white;
+  color: #006ec5;
+  cursor: pointer;
+}
+#current-location {
+  margin-left: 15px;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  background-color: #006ec5;
+  border: 1px solid #0d6efd;
+  border-radius: 4px;
+  transition: all 200ms ease;
+  box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
+}
+#current-location:hover {
+  background-color: white;
+  color: #006ec5;
+  cursor: pointer;
+}
+h1 {
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h3 {
+  font-weight: lighter;
+  margin-bottom: 0px;
+}
+h4 {
+  font-weight: lighter;
+  font-size: 20px;
+  margin-top: 0px;
+}
+.date-type {
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+.city-button {
+  font-size: 20px;
+  padding: 5px;
+  color: white;
+  background-color: #006ec5;
+  border: 1px solid #0d6efd;
+  border-radius: 4px;
+  transition: all 200ms ease;
+  box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
+}
+.city-button:hover {
+  background-color: white;
+  color: #006ec5;
+  cursor: pointer;
+}
+.weather {
+  display: flex;
+  flex-direction: row;
+}
+.weather-emoji {
+  font-size: 40px;
+}
+.degrees {
+  margin-top: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+}
+.links {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.link-temp {
+  text-decoration: none;
+  color: #006ec5;
+}
+.link-temp:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+.humidity-wind {
+  margin-left: 60px;
+  font-size: 20px;
+}
+.days-of-week {
+  margin-top: 30px;
+  font-size: 40px;
+}
+.data {
+  padding: 5px;
+}
