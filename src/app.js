@@ -60,10 +60,10 @@ function displayWeather(response) {
   weatherDescription.innerHTML = response.data.weather[0].main;
 
   let windSpeed = document.querySelector(".wind");
-  windSpeed.innerHTML = `Wind: ${response.data.wind.speed}`;
+  windSpeed.innerHTML = `Wind: ${response.data.wind.speed} km/h`;
 
   let humidity = document.querySelector(".humidity");
-  humidity.innerHTML = `Humidity: ${response.data.main.humidity}`;
+  humidity.innerHTML = `Humidity: ${response.data.main.humidity} %`;
 }
 
 function searchButton(city) {
