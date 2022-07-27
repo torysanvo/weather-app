@@ -99,4 +99,24 @@ currentPosition.addEventListener("click", function (event) {
   navigator.geolocation.getCurrentPosition(showPosition);
 });
 
+let lisbonSearch = document.querySelector("#city-lisbon");
+lisbonSearch.addEventListener("click", function (event) {
+  searchButton("Lisbon");
+});
+
+let parisSearch = document.querySelector("#city-paris");
+parisSearch.addEventListener("click", function (event) {
+  searchButton("Paris");
+});
+
+let sydneySearch = document.querySelector("#city-sydney");
+sydneySearch.addEventListener("click", function (event) {
+  searchButton("Sydney");
+});
+
+let sanfransiscoSearch = document.querySelector("#city-san-fransisco");
+sanfransiscoSearch.addEventListener("click", function (event) {
+  searchButton("San Fransisco");
+});
+
 searchButton("Kyiv");
