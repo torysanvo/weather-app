@@ -36,6 +36,7 @@ function displayDate(date) {
 }
 
 function displayWeather(response) {
+  console.log(response.data);
   document.querySelector("h1").innerHTML = response.data.name;
 
   let temperature = response.data.main.temp;
@@ -64,6 +65,12 @@ function displayWeather(response) {
 
   let humidity = document.querySelector(".humidity");
   humidity.innerHTML = `Humidity: ${response.data.main.humidity} %`;
+
+  let icon = document.querySelector("#emoji");
+  icon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`
+  );
 }
 
 function searchButton(city) {

@@ -37,6 +37,9 @@
     rgb(163, 216, 255) 47.6%
   );
 }
+#emoji {
+  width: 75px;
+}
 #search-button {
   margin-left: 15px;
   padding: 20px;
